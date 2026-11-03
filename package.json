@@ -1,0 +1,1 @@
+{"name":"phone-ring-controller","version":"0.1.0","private":true,"scripts":{"test":"node --test test/*.test.cjs","check":"node --check web/app.js && node --check web/schedule.js","serve":"python3 -m http.server 8080 --directory web"},"engines":{"node":">=22"}}
