@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PhoneRingController — עיצוב ותכנון</title>
+<style>
+:root{--ink:#182c36;--muted:#60727a;--paper:#f3f6f4;--green:#18694f;--line:#dbe4df}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,sans-serif;line-height:1.65}a{color:var(--green)}button,input,select{font:inherit}button,a,input,select{outline-offset:4px}button{cursor:pointer}header,main,footer{max-width:1180px;margin:auto;padding:32px 24px}header{border-bottom:1px solid var(--line)}.eyebrow{font-size:12px;letter-spacing:2px;font-weight:bold;color:var(--green)}h1{font-size:clamp(32px,5vw,58px);line-height:1.15;margin:16px 0}h2{line-height:1.3}p{margin:10px 0}.intro{max-width:780px}.links{display:flex;gap:18px;flex-wrap:wrap}.guide,.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.guide article,.card{background:white;border:1px solid var(--line);border-radius:18px;padding:20px}.guide h3{margin:0}.hero{display:grid;grid-template-columns:1fr 410px;gap:60px;align-items:start;margin:20px 0 56px}.lead{font-size:21px;color:var(--muted)}.tag{display:inline-block;padding:5px 12px;background:#e0ece4;border-radius:30px;color:var(--green);font-size:13px}.phone{background:#fff;border:8px solid #233b38;border-radius:42px;padding:24px 18px 15px;box-shadow:0 28px 65px #183d351c;max-width:410px;width:100%;margin:auto}.phone h2{margin:0;font-size:25px}.top{display:flex;justify-content:space-between;align-items:center}.small{font-size:13px;color:var(--muted)}.status{background:#eaf4ed;border-radius:22px;padding:24px;margin:20px 0}.status strong{display:block;font-size:30px}.status.quiet{background:#edf0fa}.row{display:flex;justify-content:space-between;align-items:center;gap:10px}.primary{background:var(--green);color:#fff;border:0;border-radius:12px;padding:12px 18px}.secondary{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;color:var(--ink)}.wide{width:100%;margin-top:12px}.rule{border:1px solid var(--line);border-radius:16px;padding:14px;margin:12px 0}.rule h3{margin:0}.switch{accent-color:var(--green);width:22px;height:22px}.rule button{font-size:12px;border:0;background:transparent;color:#8a3434}.note{border-right:3px solid #dfa956;background:#fff7e8;padding:16px;border-radius:8px;margin:18px 0}.steps{padding-right:22px}.steps li{margin:14px 0}.swatches{display:flex;gap:12px;margin:20px 0}.swatch{width:44px;height:44px;border-radius:50%;border:1px solid #ddd}.section{margin:48px 0}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;background:white}td,th{text-align:right;padding:14px;border-bottom:1px solid var(--line)}th{background:#e7eeea}.days{display:flex;gap:7px;flex-wrap:wrap}.days label{background:#edf3ef;border-radius:8px;padding:5px 9px}dialog{border:1px solid var(--line);border-radius:24px;padding:26px;width:min(450px,92vw);color:var(--ink)}dialog::backdrop{background:#142c3877}label.field{display:block;margin:14px 0}label.field input,label.field select{display:block;width:100%;padding:10px;border:1px solid #b4c5bb;border-radius:9px}.times{display:grid;grid-template-columns:1fr 1fr;gap:14px}.feedback{min-height:26px;font-size:13px;color:var(--green)}footer{border-top:1px solid var(--line);color:var(--muted)}@media(max-width:850px){.hero{grid-template-columns:1fr;gap:28px}.guide,.cards{grid-template-columns:1fr}header,main,footer{padding:24px 18px}.phone{border-width:6px}}
+</style></head>
+<body>
+<header>
+<div class="eyebrow">מדריך קצר • מתחילים ב־GITHUB</div>
+<h2>המקום שבו בונים את האפליקציה ביחד</h2>
+<p class="intro">GitHub הוא אתר לשמירת קוד, מעקב אחרי שינויים ועבודה משותפת. הפרויקט נשמר בתוך <b>Repository — מאגר</b>. כל שמירה בהיסטוריית הקוד נקראת <b>Commit</b>, ו־<b>Branch — ענף</b> מאפשר לפתח שינוי בנפרד מהגרסה הראשית.</p>
+<div class="guide">
+<article><h3>01 / המאגר</h3><p>כאן נמצאים קבצי האפליקציה, העיצוב והתיעוד. אפשר לראות מי שינה מה ומתי.</p><a href="https://github.com/Porat77/PhoneRingController">פתיחת הפרויקט ↗</a></article>
+<article><h3>02 / Issue — אישו</h3><p>כרטיס שמתאר משימה, רעיון או תקלה. לדוגמה: ״להוסיף שעות שקט בסוף שבוע״. אפשר לדון בו ולעקוב אחר ההתקדמות.</p><a href="https://github.com/Porat77/PhoneRingController/issues">רשימת המשימות ↗</a> · <a href="https://github.com/Porat77/PhoneRingController/issues/new">משימה חדשה</a></article>
+<article><h3>03 / PR — פול ריקווסט</h3><p>Pull Request הוא בקשה לבדוק ולמזג שינוי מענף אחד לאחר. רואים את השינויים, מוסיפים הערות וממזגים אחרי בדיקה. אישו מתאר צורך; PR מציע את הקוד שמממש אותו.</p><a href="https://github.com/Porat77/PhoneRingController/pulls">בקשות לשינוי ↗</a></article>
+</div>
+<p class="small">תהליך עבודה: פותחים אישו ← יוצרים ענף ← שומרים שינויים ← פותחים PR ← בודקים וממזגים. <a href="https://docs.github.com/en/get-started/start-your-journey/hello-world">מדריך GitHub למתחילים</a></p>
+</header>
+<main>
+<section class="hero">
+<div>
+<div class="eyebrow" lang="en">PHONE RING CONTROLLER / DESIGN 01</div>
+<h1>הטלפון מצלצל.<br>בזמן שמתאים לך.</h1>
+<p class="lead">מגדירים פעם אחת מתי שקט, והאפליקציה מנהלת את התזמון. מסך פשוט שמראה מה מוגדר עכשיו ומתי השינוי הבא.</p>
+<span class="tag">Android • ממשק WEB • עברית מלאה</span>
+<div class="note"><b>זהו דגם עיצוב אינטראקטיבי.</b> אפשר להוסיף, לכבות ולמחוק כללים ולבדוק שעה לדוגמה. שום פעולה כאן אינה משנה את מצב הצלצול של המכשיר.</div>
+<h2>השפה העיצובית</h2><p>רקע בהיר, ירוק עמוק לפעולות, כרטיסים מעוגלים וסגול עדין למצב שקט. טקסט וסמל מלווים כל מצב, כך שההבחנה אינה נשענת על צבע בלבד.</p>
+<div class="swatches" aria-label="צבעי העיצוב"><span class="swatch" style="background:#18694f" title="ירוק לפעולות"></span><span class="swatch" style="background:#edf0fa" title="רקע מצב שקט"></span><span class="swatch" style="background:#f3f6f4" title="רקע כללי"></span><span class="swatch" style="background:#182c36" title="טקסט"></span></div>
+<p class="small">הדגם נפתח ישירות בדפדפן, ללא התקנה או חיבור לשרת. כללי הדוגמה נשמרים בזיכרון הדף בלבד ומתאפסים ברענון.</p>
+</div>
+<div class="phone" aria-label="תצוגת האפליקציה">
+<div class="top"><span class="small">תצוגה מקדימה</span><span aria-hidden="true">◉</span></div>
+<div class="row"><h2>זמן לשקט</h2><label class="small">תזמון פעיל <input id="enabled" type="checkbox" checked class="switch"></label></div>
+<div class="status" id="status" aria-live="polite"></div>
+<div class="row"><h3>שעות השקט שלי</h3><span class="small">כל שבוע</span></div>
+<div id="rules"></div>
+<button class="primary wide" id="add">＋ הוספת שעות שקט</button>
+<button class="secondary wide" id="pause">השהיית התזמון לשעה</button>
+<p class="feedback" id="feedback" role="status"></p>
+<details><summary>בדיקת התזמון בדוגמה</summary><label class="field">יום בשבוע<select id="day"><option value="0">ראשון</option><option value="1">שני</option><option value="2">שלישי</option><option value="3">רביעי</option><option value="4">חמישי</option><option value="5">שישי</option><option value="6">שבת</option></select></label><label class="field">שעה<input id="clock" type="time" value="14:30"></label><p class="small">שינוי היום והשעה מעדכן את הדגם בלבד.</p></details>
+<p class="small">מצב מערכת: טרם חובר ל־Android</p>
+</div>
+</section>
+<section class="section"><div class="eyebrow">זרימת שימוש</div><h2>ארבעה מסכים, בלי עומס</h2>
+<div class="cards"><article class="card"><h3>1. חיבור והרשאות</h3><p>הסבר קצר למה נחוצה גישה ל״נא לא להפריע״, כפתור לפתיחת הגדרות Android ובדיקת ההרשאה בחזרה. הרשאה חסרה מוצגת בבירור; לא מציגים ״מוגן״ לפני חיבור מוצלח.</p></article><article class="card"><h3>2. הבית והכללים</h3><p>מצב התזמון, מעבר הבא ורשימת שעות שקט. כיבוי זמני אינו מוחק כללים. מציגים בנפרד את המצב המבוקש ואת מצב המערכת בפועל.</p></article><article class="card"><h3>3. עריכה והגדרות</h3><p>שם, ימים, התחלה וסיום. מסך הגדרות נוסף מציג הרשאות, אזור זמן ומדיניות שיחות ושעונים מעוררים. בגרסת המוצר יהיו עריכת כלל ואישור לפני מחיקה.</p></article></div></section>
+<section class="section"><h2>כללי התנהגות ברורים</h2><div class="table-wrap"><table><thead><tr><th>מקרה</th><th>התנהגות מתוכננת</th></tr></thead><tbody>
+<tr><td>אין כלל פעיל</td><td>האפליקציה אינה מבקשת שקט. צלצול עדיין תלוי בעוצמת הקול, בהגדרות המשתמש ובכללי מערכת אחרים.</td></tr>
+<tr><td>כלל 23:00–07:00</td><td>היום הנבחר הוא יום תחילת השקט. כלל ביום ראשון ממשיך עד 07:00 ביום שני.</td></tr>
+<tr><td>חפיפה בין כללים</td><td>שקט כל עוד לפחות כלל אחד פעיל. תחילת הטווח כלולה; שעת הסיום אינה כלולה.</td></tr>
+<tr><td>התחלה וסיום זהים</td><td>מציגים שגיאה; אין הנחה סמויה של 24 שעות.</td></tr>
+<tr><td>השהיה לשעה</td><td>מסירים זמנית את בקשת השקט של האפליקציה וחוזרים לתזמון בסיום. אין הבטחה לבטל שקט שהוגדר במקום אחר.</td></tr>
+<tr><td>אתחול / שינוי שעה / אזור זמן</td><td>רכיב Android מחשב מחדש את המצב והמעבר הבא. לוח הזמנים עוקב אחר השעה המקומית במכשיר, כולל שעון קיץ.</td></tr>
+<tr><td>הרשאה נשללה</td><td>מפסיקים להציג שהתזמון מיושם, מציגים אזהרה וקישור לתיקון ההרשאה.</td></tr>
+</tbody></table></div></section>
+<section class="section"><div class="eyebrow">תכנון המימוש</div><h2>WEB בחזית, Android מאחורי הקלעים</h2>
+<p>אתר רגיל או PWA אינם מספקים גישה לשליטה בצלצול הטלפון ולתזמון מערכת אמין כשהדפדפן סגור. לכן ההצעה היא ממשק HTML/CSS/JavaScript באריזת Android באמצעות Capacitor, עם תוסף Kotlin מקומי שמנהל הרשאות, כללים ותזמון. זהו תכנון למימוש בהמשך; הקובץ הזה כולל את העיצוב והדגם בלבד.</p>
+<ul><li><b>ממשק:</b> עברית ו־RTL, מותאם למובייל, מסכי בית / כלל / הרשאות / הגדרות.</li><li><b>מצב שקט:</b> שימוש ב־NotificationManager וב־AutomaticZenRule לפי גרסת Android, עם גישת מדיניות התראות שהמשתמש מאשר. באפליקציות שמכוונות ל־Android 15 ומעלה, אין להסתמך על שינוי מצב DND הגלובלי; כלל האפליקציה משתלב עם כללי המערכת.</li><li><b>תזמון:</b> מתזמן מקומי, חישוב המעבר הבא וקליטה של אתחול ושינויי שעה. אם נדרשים alarms מדויקים, בודקים canScheduleExactAlarms ומבקשים את הגישה המתאימה; ללא הרשאה מציגים מגבלה ולא מבטיחים דיוק.</li><li><b>שמירה:</b> כללים נשמרים מקומית ברכיב Android; אין צורך בחשבון או בשרת בגרסה הראשונה.</li><li><b>גבולות:</b> ״מותר לצלצל״ משמעו שהאפליקציה מסירה את בקשת השקט שלה. היא אינה כופה צלצול מול מצב שקט ידני או DND אחר. השפעה על שעונים מעוררים, מדיה ושיחות חוזרות תוגדר ותיבדק במפורש לפני שחרור.</li></ul>
+<p><b>בדיקות לפני APK:</b> גבולות שעות, חצות וסופי שבוע; חפיפות; הסרת הרשאות; אתחול; מסך כבוי וחיסכון בסוללה; שינוי אזור זמן ושעון קיץ; שיחות אמיתיות בכמה גרסאות Android ובמכשיר Samsung.</p>
+<p class="small">מקורות טכניים: <a href="https://developer.android.com/reference/android/app/NotificationManager">NotificationManager</a> · <a href="https://developer.android.com/about/versions/15/behavior-changes-15#dnd-changes">שינויי DND ב־Android 15</a> · <a href="https://developer.android.com/develop/background-work/services/alarms">תזמון Alarms</a></p>
+</section>
+</main><footer>PhoneRingController · מסמך עיצוב ודגם אינטראקטיבי · נובמבר 2026</footer>
+<dialog id="editor"><form id="form"><h2>שעות שקט חדשות</h2><label class="field">שם הכלל<input id="name" required maxlength="40" placeholder="למשל: שנת לילה"></label><div class="times"><label class="field">התחלה<input id="start" type="time" required value="23:00"></label><label class="field">סיום<input id="end" type="time" required value="07:00"></label></div><fieldset><legend>ימי התחלה</legend><div class="days" id="days"></div></fieldset><p class="small">אם הסיום מוקדם מההתחלה, השקט ממשיך ליום הבא.</p><p id="error" role="alert"></p><div class="row"><button class="primary" type="submit">שמירת הכלל</button><button class="secondary" type="button" id="cancel">ביטול</button></div></form></dialog>
+<script>
+const days=['ראשון','שני','שלישי','רביעי','חמישי','שישי','שבת'];
+let rules=[{name:'שנת לילה',start:'23:00',end:'07:00',days:[0,1,2,3,4,5,6],enabled:true},{name:'זמן להתרכז',start:'09:00',end:'11:00',days:[0,1,2,3,4],enabled:true}];
+let pauseUntil=0;
+const $=id=>document.getElementById(id);
+const mins=t=>Number(t.split(':')[0])*60+Number(t.split(':')[1]);
+function active(day,time){return rules.some(r=>{if(!r.enabled)return false;let s=mins(r.start),e=mins(r.end);return s<e?r.days.includes(day)&&time>=s&&time<e:(r.days.includes(day)&&time>=s)||(r.days.includes((day+6)%7)&&time<e);});}
+function update(){const day=Number($('day').value),t=mins($('clock').value||'00:00'),on=$('enabled').checked,paused=Date.now()<pauseUntil,q=on&&!paused&&active(day,t);
+$('status').classList.toggle('quiet',q);$('status').replaceChildren();
+let label=document.createElement('div');label.textContent='לפי שעת הדוגמה';let strong=document.createElement('strong');strong.textContent=!on?'התזמון כבוי':paused?'התזמון מושהה':q?'☾ זמן שקט':'♫ מותר לצלצל';
+let sub=document.createElement('div');sub.className='small';
+if(on&&!paused){let next='';for(let d=1;d<=10080;d++){let abs=t+d,nd=(day+Math.floor(abs/1440))%7,nt=abs%1440;if(active(nd,nt)!==q){next='המעבר הבא: יום '+days[nd]+' ב־'+String(Math.floor(nt/60)).padStart(2,'0')+':'+String(nt%60).padStart(2,'0');break;}}sub.textContent=next||'אין מעבר מתוכנן בשבוע הקרוב';}else sub.textContent=paused?'ההשהיה תסתיים ב־'+new Date(pauseUntil).toLocaleTimeString('he-IL',{hour:'2-digit',minute:'2-digit'}):'אפשר להפעיל שוב בכל רגע';
+$('status').append(label,strong,sub);}
+function render(){$('rules').replaceChildren();rules.forEach((r,i)=>{let card=document.createElement('div');card.className='rule';let row=document.createElement('div');row.className='row';let title=document.createElement('h3');title.textContent=r.name;let toggle=document.createElement('input');toggle.type='checkbox';toggle.className='switch';toggle.checked=r.enabled;toggle.setAttribute('aria-label','הפעלת '+r.name);toggle.onchange=()=>{r.enabled=toggle.checked;update();};row.append(title,toggle);let text=document.createElement('div');text.dir='ltr';text.style.textAlign='right';text.textContent=r.start+' – '+r.end;let bottom=document.createElement('div');bottom.className='row';let meta=document.createElement('span');meta.className='small';meta.textContent=r.days.length===7?'כל יום':r.days.map(d=>days[d]).join(' · ');let del=document.createElement('button');del.textContent='מחיקה';del.setAttribute('aria-label','מחיקת '+r.name);del.onclick=()=>{rules.splice(i,1);render();};bottom.append(meta,del);card.append(row,text,bottom);$('rules').append(card);});if(!rules.length)$('rules').textContent='אין שעות שקט. אפשר להוסיף כלל ראשון.';update();}
+days.forEach((d,i)=>{let label=document.createElement('label'),input=document.createElement('input');input.type='checkbox';input.value=i;input.checked=true;label.append(input,' '+d);$('days').append(label);});
+$('add').onclick=()=>{$('error').textContent='';$('editor').showModal();};
+$('cancel').onclick=()=>$('editor').close();
+$('form').onsubmit=e=>{e.preventDefault();let selected=Array.from($('days').querySelectorAll('input:checked')).map(x=>Number(x.value));if(!$('name').value.trim()||!selected.length||$('start').value===$('end').value){$('error').textContent='יש לבחור שם, לפחות יום אחד ושעות התחלה וסיום שונות.';return;}rules.push({name:$('name').value.trim(),start:$('start').value,end:$('end').value,days:selected,enabled:true});$('editor').close();$('name').value='';render();$('feedback').textContent='הכלל נוסף לדגם.';};
+$('enabled').onchange=update;$('day').onchange=update;$('clock').oninput=update;
+$('pause').onclick=()=>{if(!$('enabled').checked){$('feedback').textContent='התזמון כבר כבוי. יש להפעיל אותו לפני השהיה.';return;}if(pauseUntil>Date.now()){pauseUntil=0;$('pause').textContent='השהיית התזמון לשעה';}else{pauseUntil=Date.now()+3600000;$('pause').textContent='ביטול ההשהיה';}update();};
+setInterval(()=>{if(pauseUntil&&Date.now()>=pauseUntil){pauseUntil=0;$('pause').textContent='השהיית התזמון לשעה';update();}},1000);render();
+</script></body></html>
