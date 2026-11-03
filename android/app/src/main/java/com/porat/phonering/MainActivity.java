@@ -55,7 +55,7 @@ public final class MainActivity extends Activity {
                         case "save":controller.save(req.getJSONObject("payload"));break;
                         case "connect":
                             if(!controller.access())startActivity(new Intent(Settings.ACTION_NOTIFICATION_POLICY_ACCESS_SETTINGS));
-                            else {controller.connect();startActivity(new Intent(Settings.ACTION_ZEN_MODE_SETTINGS));}
+                            else {controller.connect();startActivity(new Intent(Settings.ACTION_NOTIFICATION_POLICY_ACCESS_SETTINGS));}
                             break;
                         case "exact":
                             if(android.os.Build.VERSION.SDK_INT>=31)startActivity(new Intent(Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM,Uri.parse("package:"+getPackageName())));
